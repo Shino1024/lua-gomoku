@@ -25,7 +25,7 @@ end
 function getDataFromPlayers()
 	local answer
 	local coords = {}
-	repeat
+	while true do
 		if player[0] then
 			io.write("Player one, coordinates: ")
 		end
@@ -43,5 +43,5 @@ function getDataFromPlayers()
 		else
 			print "Enter correct coordinates!"
 		end
-	until true
+	end
 end
